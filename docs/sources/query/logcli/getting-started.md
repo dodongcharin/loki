@@ -961,7 +961,7 @@ When not set, `--batch` defaults to 1000.
 Setting a `--limit` value larger than the `--batch` value will cause the
 requests from logcli to Loki to be batched.
 
-When you run a query in Loki, it will return up to a certain number of log lines. By default, this limit is 5000 lines. You can configure this server limit with the `limits_config.max_entries_limit_per_query` in Loki's configuration.
+When you run a query in Loki, it will return up to a certain number of log lines. By default, this limit is 5000 lines. You can configure this server limit with the `limits_config.max_entries_limit_per_query` in Loki's [configuration](https://grafana.com/docs/loki/<LOKI_VERSION>/configure/#limits_config).
 
 Batching allows you to query for a results set that is larger than this server-side limit, as long as the `--batch` value is less than the server limit.
 
